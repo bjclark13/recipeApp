@@ -2,11 +2,14 @@
     <input type="text" ng-model="$ctrl.q" placeholder="Search for a recipe!" required />
     
     <div ng-repeat="(value, label) in $ctrl.dietaryRestrictions">
-        <label>
+        <label
+            style="width: 250px"
+        >
             <span> {{label}} </span>
             <input 
             type="checkbox"
-            ng-model="$ctrl.diet[value]" 
+            ng-model="$ctrl.diet[value]"
+            style="width: 250px" 
             />
         </label>
     </div>
@@ -16,18 +19,18 @@
         type="number" 
         ng-model="$ctrl.minCals"
         placeholder="Minimum Calories per Serving"
+        style="width: 250px"
         />
     </p>
-    
-    
+
     <p>
         <input 
         type="maxCals" 
         ng-model="$ctrl.maxCals"
         placeholder="Maximum Calories per Serving"
+        style="width: 250px"
         />
     </p>
-    
-    
+
     <button type="submit"> Search </button>
 </form>
