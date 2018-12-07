@@ -3,8 +3,10 @@ Recipe Seach
 A super basic web app that allow you to call https://api.edamam.com in order to search for recipes, and add them as your favories.
 
 To run: 
- `npm install -g http-server`
- `http-service -o`
+ ```
+    npm install -g http-server
+    http-service -o
+```
 
 Notes: 
 - I would have loved to have done searching onChange rather than clicking a submit button, but the API's free version rate limits API calls, so I decided not to do that to keep from hitting those limits.
