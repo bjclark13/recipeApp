@@ -1,1 +1,28 @@
-<!doctype html><html lang="en"><head> <meta charset="UTF-8"> <title>My Recipe Search</title> <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.0/angular.min.js"></script> <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.0/angular-route.js"></script> <script src="index.js"></script> <script src="favorites.js"></script> <script src="recipeList.js"></script> <script src="recipeDetails.js"></script> <script src="recipeSearch.js"></script> </head><body ng-app="recipeApp"> <h1> Recipe Search App </h1> <a href="https://bjclark13.github.io/recipeApp/"> View Demo </a> <nav> <li><a href="#!">Home</a></li><li><a href="#!favorites">Favorites</a></li></nav> <div ng-view></div></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Recipe Search</title>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.0/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.0/angular-route.js"></script>
+  <script src="index.js"></script>
+  <script src="favorites.js"></script>
+  <script src="recipeList.js"></script>
+  <script src="recipeDetails.js"></script>
+  <script src="recipeSearch.js"></script>
+  
+</head>
+<body ng-app="recipeApp">
+  <h1> Recipe Search App </h1>
+
+  <a href="https://bjclark13.github.io/recipeApp/"> View Demo on GitHub </a>
+
+  <nav>
+    <li><a href="#!">Home</a></li>
+    <li><a href="#!favorites">Favorites</a></li>
+  </nav>
+
+    <div ng-view></div>
+</body>
+</html>
