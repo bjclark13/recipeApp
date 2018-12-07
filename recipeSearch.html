@@ -1,0 +1,15 @@
+<form ng-Submit="$ctrl.search()">
+    <input type="text" ng-model="$ctrl.q" placeholder="Search for a recipe!" required />
+    
+    <div ng-repeat="(value, label) in $ctrl.dietaryRestrictions">
+        <label>
+            <span> {{label}} </span>
+            <input 
+                type="checkbox"
+                ng-model="$ctrl.diet[value]" 
+            />
+        </label>
+    </div>
+    
+    <button type="submit"> Search </button>
+</form>
