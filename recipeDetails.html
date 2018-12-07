@@ -19,11 +19,10 @@
     <div>
       <button ng-click="$ctrl.toggle()"> Less Details</button>
     </div>
-    
-    <button ng-if="!$ctrl.open" ng-click="$ctrl.toggle()"> More Details</button>
-  
   </div>
-  
+
+  <button ng-if="!$ctrl.open" ng-click="$ctrl.toggle()"> More Details</button>
+
   <button ng-click="$ctrl.addToFavorites()" ng-if="!$ctrl.favorites && !$ctrl.added"> Add to Favorites </button>
   <button ng-click="$ctrl.removeFromFavorites($index)" ng-if="$ctrl.favorites"> Remove From Favorites </button>
   

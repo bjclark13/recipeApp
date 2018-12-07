@@ -24,7 +24,22 @@
                 if ( ctrl.diet[key])
                 apiCall += '&diet=' + key;
             });
-                        
+
+            if (ctrl.minCals || ctrl.maxCals) {
+                apiCall += '&calories=';
+
+                if ( ctrl.minCals && ctrl.maxCals ) {
+                    apiCall += ctrl.minCals + '-' + ctrl.maxCals;
+                } else {
+                    if ( ctrl.minCals ) {
+                        apiCall += ctrl.minCals + '+';
+                    } else {
+                        apiCall += ctrl.maxCals;
+
+                    }
+                }
+            }
+            
             $http.get(apiCall)
             .then(function(response) {
                 

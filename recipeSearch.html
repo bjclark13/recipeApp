@@ -5,11 +5,29 @@
         <label>
             <span> {{label}} </span>
             <input 
-                type="checkbox"
-                ng-model="$ctrl.diet[value]" 
+            type="checkbox"
+            ng-model="$ctrl.diet[value]" 
             />
         </label>
     </div>
+    
+    <p>
+        <input 
+        type="number" 
+        ng-model="$ctrl.minCals"
+        placeholder="Minimum Calories per Serving"
+        />
+    </p>
+    
+    
+    <p>
+        <input 
+        type="maxCals" 
+        ng-model="$ctrl.maxCals"
+        placeholder="Maximum Calories per Serving"
+        />
+    </p>
+    
     
     <button type="submit"> Search </button>
 </form>
