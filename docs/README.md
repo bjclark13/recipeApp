@@ -8,6 +8,8 @@ To run:
     http-service -o
 ```
 
+or view demo at [GitHub Pages](https://bjclark13.github.io/recipeApp)
+
 Notes: 
 - I would have loved to have done searching onChange rather than clicking a submit button, but the API's free version rate limits API calls, so I decided not to do that to keep from hitting those limits.
 - Some of the diet checkboxes don't work (like high-fiber). I think that is a bug in the API, as I just copied and pasted those from the documentation.
